@@ -1,6 +1,7 @@
 # LinkedinList
 
 ## 160. Intersection of Two Linked Lists
+HashSet Solution:
 ```java
 /**
  * Definition for singly-linked list.
@@ -32,5 +33,27 @@ public class Solution {
     }
 }
 ```
-## Time : O(N)
+## Time : O(N+M)
 ## Space : O(N)
+
+Two Pointer Solution:
+```c++
+class Solution {
+public:
+    ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
+        if (!headA || !headB) return nullptr;
+
+        ListNode* pA = headA;
+        ListNode* pB = headB;
+
+        while (pA != pB) {
+            pA = (pA) ? pA->next : headB;
+            pB = (pB) ? pB->next : headA;
+        }
+
+        return pA;  // Can be nullptr if no intersection
+    }
+};
+```
+## Time : O(N+M)
+## Space : O(1)
