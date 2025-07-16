@@ -33,7 +33,7 @@ public class Solution {
     }
 }
 ```
-**Time : O(N+M)**
+**Time : O(N+M)**     
 **Space : O(N)**
 
 Two Pointer Solution:
@@ -55,5 +55,5 @@ public:
     }
 };
 ```
-**Time : O(N+M)**
+**Time : O(N+M)**     
 **Space : O(1)**
