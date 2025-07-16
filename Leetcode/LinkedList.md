@@ -32,3 +32,5 @@ public class Solution {
     }
 }
 ```
+## Time : O(N)
+## Space : O(N)
