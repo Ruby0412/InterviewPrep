@@ -33,8 +33,8 @@ public class Solution {
     }
 }
 ```
-** Time : O(N+M) **
-** Space : O(N) **
+**Time : O(N+M)**
+**Space : O(N)**
 
 Two Pointer Solution:
 ```c++
@@ -55,5 +55,5 @@ public:
     }
 };
 ```
-** Time : O(N+M) **
-** Space : O(1) **
+**Time : O(N+M)**
+**Space : O(1)**
