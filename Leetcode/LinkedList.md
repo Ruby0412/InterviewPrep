@@ -1,7 +1,7 @@
 # LinkedinList
 
 ## 160. Intersection of Two Linked Lists
-HashSet Solution:
+HashSet Solution (Java):
 ```java
 /**
  * Definition for singly-linked list.
@@ -38,7 +38,7 @@ public class Solution {
 
 ───────────────────────────────────────────────────────────────
 
-Two Pointer Solution:
+Two Pointer Solution (C++):
 ```c++
 class Solution {
 public:
