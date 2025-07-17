@@ -145,7 +145,7 @@ public:
 **Space : O(N+M)**
 
 ## 206. Reverse Linked List
-Solution One(C++):
+Solution(C++):
 ```c++
 class Solution {
 public:
@@ -168,3 +168,27 @@ public:
 **Time : O(n)**     
 **Space : O(1)**
 
+## 141. Linked List Cycle
+Solution(C++):
+```c++
+class Solution {
+public:
+    bool hasCycle(ListNode *head) {
+        ListNode* fast = head;
+        ListNode* slow = head;
+
+        while(fast != nullptr && fast->next!= nullptr){
+            slow = slow->next;
+            fast = fast->next->next;
+
+            if(slow == fast){
+                return true;
+            }
+        }
+
+        return false;
+    }
+};
+```
+**Time : O(n)**     
+**Space : O(1)**
