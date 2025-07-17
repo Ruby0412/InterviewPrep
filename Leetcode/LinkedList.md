@@ -192,3 +192,23 @@ public:
 ```
 **Time : O(n)**     
 **Space : O(1)**
+
+## 876. Middle of the Linked List
+Solution(C++):
+```c++
+class Solution {
+public:
+    ListNode* middleNode(ListNode* head) {
+        ListNode* fast = head;
+        ListNode* slow = head;
+
+        while(fast && fast->next){
+            slow = slow->next;
+            fast = fast->next->next;
+        }
+
+        return slow;
+
+    }
+};
+```
