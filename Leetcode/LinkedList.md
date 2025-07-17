@@ -61,7 +61,7 @@ public:
 **Space : O(1)**
 
 
-##21. Merge Two Sorted Lists
+## 21. Merge Two Sorted Lists
 Solution One(C++):
 ```c++
 /**
@@ -144,7 +144,7 @@ public:
 **Time : O(N+M)**     
 **Space : O(N+M)**
 
-##206. Reverse Linked List
+## 206. Reverse Linked List
 Solution One(C++):
 ```c++
 class Solution {
