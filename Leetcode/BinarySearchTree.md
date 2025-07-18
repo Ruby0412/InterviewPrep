@@ -45,6 +45,7 @@ because of recursion stack.
 Same as time complexity.
 did not use any additional data structure
 
+Improvement on the Space Complexity
 ```c++
 class Solution {
 public:
@@ -94,3 +95,4 @@ In the best case (balanced BST): O(log n)
 In the worst case (skewed tree): O(n)**
 
 
+230. Kth Smallest Element in a BST
