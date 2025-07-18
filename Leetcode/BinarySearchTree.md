@@ -30,7 +30,7 @@ public:
     }
 };
 ```
-** Time : O(h) total time is proportional to the number of nodes n **   
+**Time : O(h) total time is proportional to the number of nodes n**   
 Time Complexity: O(h)
 At each step, you move either left or right down the tree.
 
@@ -41,7 +41,7 @@ h = height of the tree
 Best case (balanced BST): O(log n)
 
 Worst case (skewed BST): O(n)  
-** Space : O(h) **
+**Space : O(h)**
 because of recursion stack.
 
 Same as time complexity.
@@ -70,8 +70,8 @@ public:
     }
 };
 ```
-** Time : O(n) total time is proportional to the number of nodes n**     
-**Space : O(h) where h is the height of the tree.
+**Time : O(n) total time is proportional to the number of nodes n**     
+**Space : O(h) where h is the height of the tree.**
 
 This comes from the recursion stack.
 
