@@ -30,7 +30,7 @@ public:
     }
 };
 ```
-**Time : O(h) total time is proportional to the number of nodes n** 
+**Time : O(h)** 
   
 Time Complexity: O(h)
 At each step, you move either left or right down the tree.
@@ -44,6 +44,26 @@ Worst case (skewed BST): O(n)
 because of recursion stack.
 Same as time complexity.
 did not use any additional data structure
+
+```c++
+class Solution {
+public:
+    TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
+        while (root != NULL) {
+            if (p->val < root->val && q->val < root->val) {
+                root = root->left;
+            } else if (p->val > root->val && q->val > root->val) {
+                root = root->right;
+            } else {
+                return root;  // Split point or found one of p/q
+            }
+        }
+        return NULL;
+    }
+};
+```
+**Time : O(h)** 
+**Space : O(1)**
 
 ## 98. Validate Binary Search Tree
 ```c++
