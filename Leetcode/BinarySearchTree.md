@@ -30,24 +30,20 @@ public:
     }
 };
 ```
-**Time : O(h) total time is proportional to the number of nodes n**   
+**Time : O(h) total time is proportional to the number of nodes n** 
+  
 Time Complexity: O(h)
 At each step, you move either left or right down the tree.
-
 You stop when you find the split point or when you reach a target node.
-
 h = height of the tree
-
 Best case (balanced BST): O(log n)
-
 Worst case (skewed BST): O(n)  
+
 **Space : O(h)**
+
 because of recursion stack.
-
 Same as time complexity.
-
-You don’t use any additional data structures.
-
+did not use any additional data structure
 
 ## 98. Validate Binary Search Tree
 ```c++
@@ -74,9 +70,7 @@ public:
 **Space : O(h) where h is the height of the tree.**
 
 This comes from the recursion stack.
-
 In the best case (balanced BST): O(log n)
-
 In the worst case (skewed tree): O(n)**
 
 
